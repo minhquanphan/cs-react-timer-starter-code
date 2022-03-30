@@ -23,7 +23,7 @@ const useTimer = (ini = 0) => {
     // "Your code here";
     clearInterval(refInterval.current)
     active.current.disabled = false;
-
+    setTime(0);
   };
 
   return { Time, startTimer, stopTimer, resetTimer, active };
