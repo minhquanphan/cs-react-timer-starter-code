@@ -1,7 +1,8 @@
 :root {
-  --text-shadow-color: #ff9c99;
-  --text-main-color: #d74742;
+  --text-shadow-color: rgba(255, 255, 255, 0.2);
+  /* --text-main-color: #d74742; */
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +10,14 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background: url("./assets/Sunset-iMac-Wallpaper.jpeg");
   font-family: -apple-system, BlinkMacSystemFont, "", "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -24,13 +32,16 @@ code {
 
 h1 {
   color: var(--text-main-color);
+  background: linear-gradient(45deg, #f3ec78, #af4261);
   font-family: "Rouge Script", cursive;
   font-size: 130px;
   font-weight: normal;
-  line-height: 48px;
+  line-height: 140px;
   margin: 0 0 50px;
   text-align: center;
   text-shadow: 1px 1px 2px var(--text-shadow-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 p {
